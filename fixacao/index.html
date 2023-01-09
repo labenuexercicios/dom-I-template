@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS - prática guiada 3</title>
+  <title>DOM I</title>
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <p id="paragrafo">Olá!</p>
   <label for="texto">Texto:</label>
-  <input id="texto" name="texto" type="text" />
+  <input onkeyup="imprimirValor()" id="texto" name="texto" type="text" />
   <br/>
-  <button onclick=""></button>
+  <button onclick="mudarTexto()">Enviar</button>
+  <br>
+  <button id="button-mudanca" onclick="mudarValor()">Mudar</button>
 </body>
 
 </html>

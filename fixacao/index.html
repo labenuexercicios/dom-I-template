@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS - prática guiada 3</title>
+  <title>Dom 1 - prática guiada 3</title>
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <p id="paragrafo">Olá!</p>
   <label for="texto">Texto:</label>
-  <input id="texto" name="texto" type="text" />
+  <!-- Onkwtdown faz com q fica imprimindo enquanto escreve -->
+  <input onkeydown="imprimivalortexto()" id="texto" name="texto" type="text" value=""/>
   <br/>
-  <button onclick=""></button>
+  <button onclick="alteravalor()">Botao</button>
 </body>
 
 </html>
